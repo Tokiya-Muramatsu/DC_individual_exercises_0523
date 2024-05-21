@@ -7,18 +7,40 @@
 <title>DREAM MUSEUM</title>
 </head>
 <body>
-	<h1>
-		Hello 
-	</h1>
-
 	
+	<header>
+		<div>
+			<a th:href="@{/}"><img th:src="@{/img/dream_univer_logo.png}" class="head_img"/></a>
+		</div>
+		
+		<nav>
+			<ul class="head_ul">
+				<li><a th:href="@{/}">会社概要</a></li>
+				<li><a th:href="@{/}">事業内容</a></li>
+				<li><a th:href="@{/}">採用情報</a></li>
+				<li><a th:href="@{/}">お問い合わせ</a></li>
+			</ul>
+		</nav>
+	</header>
 	
+	<div class="bg-slider">
+	  <h1 class="bg-slider__title">『仲間と共に夢を』</h1>
+	</div>
+		
 	
 <script src="js/jquery.js"></script>
 <script src="js/jquery.bgswitcher.js"></script>	
 <script>
-	$(document).ready(function(){
-	    console.log("Hello, world!");
+	$(document).ready(function() {
+	    $('.bg-slider').bgSwitcher({
+	        images: ['img/top_slide_01.jpg', 'img/top_slide_02.jpg', 'img/top_slide_03.jpg'], // 切り替える背景画像を指定
+			interval: 3000,	// 背景画像を切り替える間隔を指定 3000=3秒
+			loop: true, // 切り替えを繰り返すか指定
+			shuffle: false, // 背景画像の順番をシャッフルするか指定
+			effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+			duration: 700, // エフェクトの時間を指定します。
+			easing: "swing" // エフェクトのイージングをlinear,swingから指定
+		});
 	});
 </script>
 
