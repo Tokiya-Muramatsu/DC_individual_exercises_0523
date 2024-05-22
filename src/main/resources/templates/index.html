@@ -22,27 +22,31 @@
 				<li><a th:href="@{/}">お問い合わせ</a></li>
 			</ul>
 		</nav>
-		
-		<!-- ハンバーガーメニュー -->
-		<div class="hamburger">
-			
-		  <nav  class="ham_nav">
-		    <ul  class="ham_ul">
-		      <li class="ham_li"><a th:href="@{/}" class="ham_link">会社概要</a></li>
-		      <li class="ham_li"><a th:href="@{/}" class="ham_link">事業内容</a></li>
-		      <li class="ham_li"><a th:href="@{/}"class="ham_link" >採用情報</a></li>
-		      <li class="ham_li"><a th:href="@{/}" class="ham_link">お問い合わせ</a></li>
-		    </ul>
-		  </nav>
-		  <button class="header_ham" id="js-hamburger">
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		  </button>
-		  
-		  </div>
 	</header>
 	
+	        
+   <ul class="nav-ul">
+       <li class="nav-li">
+            <a class="nav-link" href="#"><i class="fa-solid fa-building"></i><br>
+	        <span class="iconname">会社概要</span></a>
+       </li>
+	   <li class="nav-li">
+		    <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i><br>
+			<span class="iconname">事業内容</span></a>
+		</li>
+		<li class="nav-li-no-hover">
+		    <img th:src="@{/img/dream_univer_logo03.png}"/>
+		</li>
+		<li class="nav-li">
+		    <a class="nav-link" href="#"><i class="fa-solid fa-user-tie"></i><br>
+			<span class="iconname">採用情報</span></a>
+		</li>
+		<li class="nav-li">
+		    <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i><br>
+			<span class="iconname">お問い合わせ</span></a>
+		</li>
+    </ul>
+
 	<div class="bg-slider">
 	  <h1 class="bg-slider__title">「仲間と共に夢を」</h1>
 	</div>
@@ -52,6 +56,7 @@
 		<div>
 			<h1>
 				学長メッセージ
+				<i class="fas fa-heart"></i>
 			</h1>
 		</div>
 		
@@ -60,6 +65,7 @@
 	
 <script src="js/jquery.js"></script>
 <script src="js/jquery.bgswitcher.js"></script>	
+<script src="https://kit.fontawesome.com/f85e548a0a.js" crossorigin="anonymous"></script>
 <script>
 	$(document).ready(function() {
 	    $('.bg-slider').bgSwitcher({
