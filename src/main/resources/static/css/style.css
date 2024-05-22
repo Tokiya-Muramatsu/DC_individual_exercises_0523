@@ -323,6 +323,111 @@ opacity: 0.8;
 .access_map_box iframe {
 	height: 240px;
 }
+/*フッター設定
+---------------------------------------------------------------------------*/
+.footer_top {
+	width: 100%;
+	height: 320px;
+	display: flex;
+	justify-content: space-around;
+/*	align-items: center;*/
+}
+
+.footer_one a img {
+	width: 240px;
+	margin-top: 32px;
+}
+
+.footer_second {
+	line-height: 2;
+	padding-top: 40px;
+}
+
+.footer_second h1 span {
+	color: #000;
+	font-size: 32px;
+	border-bottom: 2px solid red;
+}
+
+.footer_second p a {
+	color: #000;
+	line-height: 2.5;
+	font-size: 16px;
+}
+
+.footer_second p a:hover {
+	border-bottom: 1px solid red;
+}
+
+.footer_third {
+	line-height: 2;
+	padding-top: 40px;
+}
+
+.footer_third h1 span {
+	color: #000;
+	font-size: 32px;
+	border-bottom: 2px solid red;
+}
+
+.footer_line {
+	margin: 32px 0px;
+}
+
+.footer_line a {
+	color: #fff;
+	background-color: #06C755;
+	border-bottom: 5px solid #094;
+	padding: 1rem 3rem 1rem 2rem;
+	font-size: 1.5rem;
+	border-radius: 100vh;
+}
+
+.footer_line a:hover {
+	color: #fff;
+	background: #4CC764;
+	border-bottom: 2px solid #4CC764;
+}
+
+.footer_line a i {
+	margin-right: 1rem;
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+.footer_contact {
+	margin-top: 40px;
+}
+
+.footer_contact a {
+	color: #fff;
+	background-color: #eb6100;
+	border-bottom: 5px solid #d25600;
+	padding: 1rem 3rem 1rem 2rem;
+	font-size: 1.5rem;
+	border-radius: 100vh;
+}
+
+.footer_contact a:hover {
+	background-color: #eb7900;
+	border-bottom: 2px solid #eb7900;
+}
+
+.footer_contact a i {
+	margin-right: 1rem;
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+/*コピーライト
+---------------------------------------------------------------------------*/
+#copyright {
+	clear: both;
+	text-align: center;
+	background: #c73302;
+	/*背景色*/
+}
+
 
 
 @media screen and (max-width: 1000px) {
