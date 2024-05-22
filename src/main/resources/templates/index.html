@@ -4,8 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link th:href="@{img/favicon.ico}" rel="icon" type="image/x-icon" />
+
+<!-- slick -->
+<link rel="stylesheet" th:href="@{css/slick.css}">
+<link rel="stylesheet" th:href="@{css/slick-theme.css}">
+
 <link th:href="@{css/style.css}" rel="stylesheet">
-<title>DREAM MUSEUM</title>
+<title>DREAM UNIVERSITY</title>
 </head>
 <body>
 	
@@ -53,18 +58,160 @@
 	
 	<main>
 		
-		<div>
-			<h1>
-				学長メッセージ
-				<i class="fas fa-heart"></i>
-			</h1>
+		<section class="news">
+		        <div class="inner">
+		          <h2 class="sub_ttl">ニュース</h2>
+		    
+		    <!-- ここからニュース記事 -->
+		    
+		          <ul class="news_list">
+		              <li class="news_list_item">
+		                <a class="" href="#">
+		                  <div class="news_list_date">
+		                    <time>2023.11.12</time>
+		                    <p class="news_item">お知らせ</p>
+		                  </div>
+		                  <p>文系学生のための「文系ジョブ 11月号」を発行</p>
+		                  <span class="arrow"></span>
+		                </a>
+		              </li>
+		              <li class="news_list_item">
+		                <a href="#">
+		                  <div class="news_list_date">
+		                    <time>2023.04.12</time>
+		                    <p class="news_item">お知らせ</p>
+		                  </div>
+		                  <p>新宿の本社を横浜に移転しました。</p>
+		                  <span class="arrow"></span>
+		                </a>
+		              </li>
+		              <li class="news_list_item">
+		                <a href="#">
+		                  <div class="news_list_date">
+		                    <time>2022.12.20</time>
+		                    <p class="news_item">お知らせ</p>
+		                  </div>
+		                  <p>サイトをリニューアルしました。</p>
+		                  <span class="arrow"></span>
+		                </a>
+		              </li>
+					  
+					</ul>
+					  
+					  <div class="news-btn">
+					      <a href="#" class="read-more">もっと見る <i class="fa-solid fa-angle-down"></i></a>
+					  </div>
+		        
+		    
+		    
+		        </div>
+		</section>
+		
+		<div class="slide_bgimg" th:style="'background-image: url(' + @{/img/vision_image.jpg} + ');'">
+		    <ul class="slide_content">
+				<li class="slide_item">
+					<div>
+						<h2><span>ビジョン</span></h2>	
+					</div>
+					
+					<div class="second_content">
+						<h3>「仲間と共に夢を」</h3>
+						<p>
+							様々な学生と出会い、夢を共有し、イノベーションを起こす<br>
+						</p>
+					</div>
+				</li>
+				
+				<li class="slide_item">
+					<div>
+						<h2><span>ミッション</span></h2>	
+					</div>
+					
+					<div class="second_content">
+						<h3>「多様性と包括性の推進」</h3>
+						<p>
+							多様性と包括性を尊重し、すべての学生や教職員が尊重され、<br>
+							活躍できる環境を提供することをミッションとします。
+						</p>
+					</div>
+				</li>
+		    </ul>	
 		</div>
+		
+		<div class="recruit">
+		     <div class="recruit_title">
+		        <h2><span>採用情報</span></h2>
+		      </div>
+		
+	        <div class="recruit_wrapper">
+	          <div class="recruit_flex_box">
+	            <div class="recruit_box">
+	              <h3>ラテラルシンキングがある方</h3>
+				  <p>新しいアイデアや斬新な視点を提供し、革新的な問題解決に</p>
+	            </div>
+	            <div class="recruit_box">
+	              <h3>多様性を尊重できる方</h3>
+				  <p>異なるバックグラウンドや視点を受け入れ、チームの力を最大限に</p>
+	            </div>
+	          </div>
+	          <div class="recruit_flex_box">
+	            <div class="recruit_box">
+	              <h3>成長意欲がある方</h3>
+				  <p>常に学び、挑戦し、自己向上を追求し、組織の発展に</p>
+	            </div>
+	            <div class="recruit_box">
+	              <h3>自ら歩む力がある方</h3>
+				  <p>リーダーシップやイニシアティブを発揮し、変化や困難に果敢に</p>
+	            </div>
+	          </div>
+	        </div>
+			
+     	<div class="recruit_btn">				
+		   <div class="recruit_btn_flex">
+			<a href="#" class="first_recruit">新卒採用<i class="fa-solid fa-angle-right"></i></a>
+		   </div>
+		   
+		   <div class="recruit_btn_flex">
+		   <a href="#" class="second_recruit">中途採用<i class="fa-solid fa-angle-right"></i></a>
+		   </div>
+		</div>
+			
+		</div>
+		
+		<div class="access">
+		     <div class="access_title">
+		        <h2><span>アクセス情報</span></h2>
+		      </div>
+		
+		    <div class="access_wrapper">
+		      <div class="access_flex_box">
+		        <div class="access_box">
+					<h3>本社</h3>
+					<p>〒151-0051<br>
+					東京都渋谷区千駄ヶ谷3-20-1 六美ビル1F
+					<br><br>
+					東京メトロ副都心線 / 北参道駅 徒歩4分<br>
+					JR総武線 / 千駄ヶ谷駅 徒歩8分</p>
+					
+					<div class="access_btn">			
+						<a href="#" >ほかの営業所はこちら   <i class="fa-solid fa-angle-right"></i></a>
+					</div>
+		        </div>
+		        <div class="access_map_box">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52364.55668413023!2d139.6958224969759!3d35.67475340574818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cbe807d75b1%3A0x3242e6bcc932c438!2z44CSMTUxLTAwNTEg5p2x5Lqs6YO95riL6LC35Yy65Y2D6aeE44Kx6LC377yT5LiB55uu77yS77yQ4oiS77yRIOWFree-juODk-ODqw!5e0!3m2!1sja!2sjp!4v1716364092085!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+		      </div>
+		     </div>
+		</div>
+		
+		
 		
 	</main>
 		
 	
 <script src="js/jquery.js"></script>
 <script src="js/jquery.bgswitcher.js"></script>	
+<script src="js/slick.min.js"></script>
 <script src="https://kit.fontawesome.com/f85e548a0a.js" crossorigin="anonymous"></script>
 <script>
 	$(document).ready(function() {
@@ -76,6 +223,14 @@
 			effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
 			duration: 700, // エフェクトの時間を指定します。
 			easing: "swing" // エフェクトのイージングをlinear,swingから指定
+		});
+		
+		$(".slide_content").slick({
+		  autoplay: true, // 自動再生
+		  autoplaySpeed: 3000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
+		  infinite: true, // 無限スライド
+		  dots: true,
+		  arrows: false,
 		});
 	});
 </script>
