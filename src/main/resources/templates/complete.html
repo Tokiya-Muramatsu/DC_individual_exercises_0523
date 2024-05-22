@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+<link th:href="@{css/complete.css}" rel="stylesheet">
 <meta charset="UTF-8">
 <title>送信完了</title>
 </head>
 </body>
-    <h2>送信完了</h2>
-   
-    
-    <p>お問い合わせありがとうございました。</p>
-	
-	<a th:href="contact">お問い合わせに戻る</a>
+
+<div class="container">
+    <h2 class="title">送信完了<i class="fa-solid fa-paper-plane"></i></h2>
+    <p class="message">お問い合わせありがとうございました。</p>
+    <a th:href="@{contact}" class="back-link">お問い合わせに戻る</a>
+</div>
+
+
+<script src="https://kit.fontawesome.com/f85e548a0a.js" crossorigin="anonymous"></script>
 </body>
 </html>

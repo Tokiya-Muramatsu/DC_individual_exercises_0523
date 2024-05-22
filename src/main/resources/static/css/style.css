@@ -378,8 +378,8 @@ opacity: 0.8;
 	color: #fff;
 	background-color: #06C755;
 	border-bottom: 5px solid #094;
-	padding: 1rem 3rem 1rem 2rem;
-	font-size: 1.5rem;
+	padding: 10px 20px;
+	font-size: 1.2rem;
 	border-radius: 100vh;
 }
 
@@ -391,7 +391,7 @@ opacity: 0.8;
 
 .footer_line a i {
 	margin-right: 1rem;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	color: #fff;
 }
 
@@ -403,8 +403,8 @@ opacity: 0.8;
 	color: #fff;
 	background-color: #eb6100;
 	border-bottom: 5px solid #d25600;
-	padding: 1rem 3rem 1rem 2rem;
-	font-size: 1.5rem;
+	padding: 10px 20px;
+	font-size: 1.2rem;
 	border-radius: 100vh;
 }
 
@@ -415,7 +415,7 @@ opacity: 0.8;
 
 .footer_contact a i {
 	margin-right: 1rem;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	color: #fff;
 }
 
@@ -424,7 +424,7 @@ opacity: 0.8;
 #copyright {
 	clear: both;
 	text-align: center;
-	background: #c73302;
+	background: rgba(162, 203, 239);
 	/*背景色*/
 }
 
@@ -545,6 +545,31 @@ opacity: 0.8;
 		margin-bottom: 24px;	
 	}
 	
+		/*フッター設定
+---------------------------------------------------------------------------*/
+	.footer_top {
+		height: 720px;
+		display: block;
+		padding-bottom: 16px;
+	}
+
+	.footer_one #footer_top_img img {
+		margin: auto;
+		display: block;
+		padding: 16px 0px 0px;
+	}
+
+	.footer_second h1 {
+		text-align: center;
+	}
+
+	.footer_second p {
+		text-align: center;
+	}
+
+	.footer_third {
+		text-align: center;
+	}
 
 
 }

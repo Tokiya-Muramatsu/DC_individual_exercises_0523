@@ -24,7 +24,7 @@
 				<li><a th:href="@{/}">会社概要</a></li>
 				<li><a th:href="@{/}">事業内容</a></li>
 				<li><a th:href="@{/}">採用情報</a></li>
-				<li><a th:href="@{/}">お問い合わせ</a></li>
+				<li><a th:href="@{contact}">お問い合わせ</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -47,7 +47,7 @@
 			<span class="iconname">採用情報</span></a>
 		</li>
 		<li class="nav-li">
-		    <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i><br>
+		    <a class="nav-link" th:href="@{contact}"><i class="fa-solid fa-envelope"></i><br>
 			<span class="iconname">お問い合わせ</span></a>
 		</li>
     </ul>
@@ -231,13 +231,13 @@
 	        <a href="#" class="btn"><i class="fa-brands fa-line"></i>公式LINE</a>
 	      </div>
 	      <div class="footer_contact">
-	        <a href="#" class="btn"><i class="fa-solid fa-envelope"></i>お問い合わせ</a>
+	        <a th:href="@{contact}" class="btn"><i class="fa-solid fa-envelope"></i>お問い合わせ</a>
 	      </div>
 	    </div>
 	  </div>
 	
 	  <div id="copyright">
-	    <small>© 2024 Dream University Co.,Ltd.</small>
+	    <small>© 2024 Dream University</small>
 	  </div>
 	</footer>
 		
